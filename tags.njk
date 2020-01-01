@@ -11,14 +11,22 @@ pagination:
 permalink: /tags/{{ tag }}/
 layout: layouts/base.njk
 renderData:
-  title: "Tagged “{{ tag }}”"
+  title: "Blog posts tagged “{{ tag }}”"
 ---
 
-<h1>Tagged “{{ tag }}”</h1>
+{% set title = "Blog posts tagged `" ~ tag ~ "`"%}
+{% include "components/pagetitle.njk" %}
 
-{% set postslist = collections[ tag ] %}
-{% include "components/postslist.njk" %}
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-12">
+      <div class="blog-grids">
 
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+        {% set postslist = collections[tag] %}
+        {% include "components/postslist.njk" %}
+
+        {% include "components/all-blogs-nav.njk" %}
+      </div>
+    </div>
+  </div>
+</div>
