@@ -115,9 +115,9 @@ template { display: none; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; line-height: 1.2; }
 
-h1, .h1 { font-size: 2rem; }
+h1, .h1 { font-size: 2.5rem; }
 
-h2, .h2 { font-size: 1.85rem; }
+h2, .h2 { font-size: 2rem; }
 
 h3, .h3 { font-size: 1.75rem; }
 
@@ -3229,9 +3229,9 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 
 .divider-custom .divider-custom-icon { color: #2c3e50 !important; font-size: 2rem; }
 
-.divider-custom.divider-light .divider-custom-line { background-color: #fff; }
+.divider-custom.divider-light .divider-custom-line { background-color: #2c3e50; }
 
-.divider-custom.divider-light .divider-custom-icon { color: #fff !important; }
+.divider-custom.divider-light .divider-custom-icon { color: #2c3e50 !important; }
 
 .btn-xl { padding: 1rem 1.75rem; font-size: 1.25rem; }
 
@@ -3243,15 +3243,15 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 
 #mainNav { padding-top: 1rem; padding-bottom: 1rem; font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight: 700; }
 
-#mainNav .navbar-brand { color: #fff; }
+#mainNav .navbar-brand { color: #2c3e50; }
 
 #mainNav .navbar-nav { margin-top: 1rem; }
 
-#mainNav .navbar-nav li.nav-item a.nav-link { color: #fff; }
+#mainNav .navbar-nav li.nav-item a.nav-link { color: #1abc9c; }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:hover { color: #1abc9c; }
+#mainNav .navbar-nav li.nav-item a.nav-link:hover { color: #2c3e50; }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus { color: #fff; }
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus { color: #1abc9c; }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active { color: #1abc9c; }
 

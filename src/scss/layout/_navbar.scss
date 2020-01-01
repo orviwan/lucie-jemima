@@ -5,19 +5,19 @@
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   .navbar-brand {
-    color: $white;
+    color: $secondary;
   }
   .navbar-nav {
     margin-top: 1rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: $primary;
         &:hover {
-          color: $primary;
+          color: $secondary;
         }
         &:active,
         &:focus {
-          color: $white;
+          color: $primary;
         }
         &.active {
           color: $primary;
