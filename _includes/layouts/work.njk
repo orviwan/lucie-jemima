@@ -3,23 +3,21 @@ layout: layouts/base.njk
 section: work
 ---
 
+{% set title %}{{ title }} ({{ year }}){% endset %}
 {% include "components/pagetitle.njk" %}
 
 <div class="container d-flex align-items-center flex-column">
   <div class="col-lg-12">
     <div class="wrapper">
       <div class="content-main">
-
+        {% if headerimage %}
+          <div class="text-center">
+            <img class="img-fluid" src="/static/img/{{ headerimage }}" alt="{{ title }}" title="{{ title }} - {{ subtitle }}" />
+          </div>
+        {% endif %}
         <article>
-          <p class="text-right">
-            <strong><time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}</strong>
-          </p>
-
           {{ layoutContent | safe }}
-
         </article>
-
-
       </div>
     </div>
   </div>
@@ -27,4 +25,4 @@ section: work
 
 
 {% set worklist = collections.work %}
-{% include "components/portfolio.njk" %}
+{% include "components/portfolio-grid.njk" %}
