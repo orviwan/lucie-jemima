@@ -1,19 +1,55 @@
-  <section class="page-section portfolio" id="portfolio">
-    <div class="container">
+<section class="page-section portfolio" id="portfolio">
+  <div class="container">
 
-      <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+    <!-- Portfolio Section Heading -->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
+    <!-- Icon Divider -->
+    <div class="divider-custom">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
       </div>
+      <div class="divider-custom-line"></div>
+    </div>
 
-      <!-- Portfolio Grid Items -->
+    <div class="row">
+      {% for work in worklist | reverse %}
+          <h3>
+            <a href="{{ work.url | url }}">
+              {% if work.data.title %}
+                {{ work.data.title }}
+              {% else %}
+                Untitled
+              {% endif %}
+            </a>
+          </h3>
+          <p>
+              {% if work.data.subtitle %}
+                {{ work.data.subtitle }}
+              {% endif %}<br />
+              {% if work.data.subtitle %}
+                {{ work.data.subtitle }}
+              {% endif %}<br />
+              {% if work.data.year %}
+                {{ work.data.year }}
+              {% endif %}<br />
+              {% if work.data.thumbnail %}
+                {{ work.data.thumbnail }}
+              {% endif %}<br />
+              {% if work.data.headerimage %}
+                {{ work.data.headerimage }}
+              {% endif %}<br />
+              {% if work.data.body %}
+                {{ work.data.body }}
+              {% endif %}
+          </p>
+
+      {% endfor %}
+
+    </div>
+
+    {# <!-- Portfolio Grid Items -->
       <div class="row">
 
         <!-- Portfolio Item 1 -->
@@ -89,7 +125,7 @@
         </div>
 
       </div>
-      <!-- /.row -->
+      <!-- /.row --> #}
 
-    </div>
-  </section>
+  </div>
+</section>
