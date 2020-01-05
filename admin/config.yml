@@ -38,16 +38,16 @@ collections:
     folder: "work"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Inner Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Year", name: "year", widget: "number"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Year", name: "year", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Header Image", name: "headerimage", widget: "image"}
-      - label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        fields: 
-          - {label: Image, name: image, widget: image}
-          - {label: Caption, name: caption, widget: string}
-
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Header Image", name: "headerimage", widget: "image" }
+      - { label: "Gallery",
+          name: "galleryImages",
+          widget: "list",
+          fields:
+            - { label: Image, name: image, widget: image }
+            - { label: Caption, name: caption, widget: string }
+        }
