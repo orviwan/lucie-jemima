@@ -1,4 +1,5 @@
 ---
+tags: work
 title: First Item
 subtitle: This is the first item in the portfolio
 year: 2019

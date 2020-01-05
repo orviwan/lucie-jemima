@@ -38,6 +38,7 @@ collections:
     folder: "work"
     create: true
     fields:
+      - { label: "Tags", name: "tags", widget: "hidden", default: "work" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Year", name: "year", widget: "number" }

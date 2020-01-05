@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+section: work
+---
+
+{% include "components/pagetitle.njk" %}
+
+<div class="container d-flex align-items-center flex-column">
+  <div class="col-lg-12">
+    <div class="wrapper">
+      <div class="content-main">
+
+        <article>
+          <p class="text-right">
+            <strong><time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}</strong>
+          </p>
+
+          {{ layoutContent | safe }}
+
+        </article>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% set worklist = collections.work %}
+{% include "components/portfolio.njk" %}
