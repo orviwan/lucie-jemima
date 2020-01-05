@@ -6,4 +6,4 @@ year: 2019
 thumbnail: /portfolio/cake.png
 headerimage: /portfolio/cake.png
 ---
-This is the body text
+This is the body text of the post
