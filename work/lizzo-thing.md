@@ -6,3 +6,5 @@ thumbnail: /static/img/lizzo.png
 headerimage: /static/img/header.png
 ---
 This is the body text
+
+![](/static/img/avataaars.svg)
