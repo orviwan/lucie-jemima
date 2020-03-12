@@ -6,8 +6,6 @@ navtitle: About
 tags:
   - nav
 ---
-![](/static/img/about-me-page.jpg)
+![](/static/img/about-me-page-2.jpg)
 
-
-
-Lucie Jemima is currently a third year illustration student about to graduate. Originally from Devon,
+Lucie Jemima is currently a third year illustration student about to graduate. Originally from Devon, she takes inspiration from the beautiful natural surroundings which informs her botanical work. The context of her work varies from more narrative based pieces and handmade zines, to more packaging and branding-based work. Keen to develop her individual visual language, she uses different media to illustrate numerous subjects and projects to discover new ways of creating art.
