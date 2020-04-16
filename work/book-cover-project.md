@@ -5,4 +5,4 @@ year: 2018
 thumbnail: /static/img/book-jacket-small-1.jpg
 headerimage: /static/img/book-jacket-home-1.jpg
 ---
-x
+Second year project to design a book cover.
