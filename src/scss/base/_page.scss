@@ -1,6 +1,7 @@
 // Styling for page sections
 .page-section {
-  padding: 6rem 0;
+  color: pink;
+  padding: 1rem 0 1rem 0;
   .page-section-heading {
     font-size: 2.25rem;
     line-height: 2rem;
@@ -11,4 +12,14 @@
       line-height: 2.5rem;
     }
   }
+}
+@include media-breakpoint-up(lg) {
+  .page-section {
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+.content-main img {
+  margin: 1rem auto;
+  display: block;
 }

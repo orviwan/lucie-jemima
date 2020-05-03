@@ -1,3 +1,6 @@
+/* Include local web fonts */
+@import "base/fonts.scss";
+
 // Import variables (overrides Bootstrap defaults)
 @import "base/variables.scss";
 
@@ -18,5 +21,3 @@
 @import "layout/contact.scss";
 @import "layout/blog.scss";
 @import "layout/footer.scss";
-
-// TEST
