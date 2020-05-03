@@ -14,11 +14,11 @@ gulp.task("css", function() {
     .pipe(gulp.dest("./_includes/assets/css"));
 });
 
-/*
-  Watch folders for changess
-*/
+/* Watch folders for changess */
 gulp.task("watch", function() {
   gulp.watch("./src/scss/**/*.scss", gulp.parallel("css"));
 });
 
 gulp.task("build", gulp.parallel("css"));
+
+gulp.task("default", gulp.parallel("css"));
