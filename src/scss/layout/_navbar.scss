@@ -29,13 +29,13 @@
     }
   }
   .navbar-toggler {
-    font-size: 80%;
+    font-size: 90%;
     padding: 0.8rem;
   }
 }
 @include media-breakpoint-up(lg) {
   #mainNav {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;

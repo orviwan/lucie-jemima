@@ -52,3 +52,11 @@
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid $gray-200;
 }
+
+form button.btn-primary {
+
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: $white;
+  font-size: 1.4rem;
+}
