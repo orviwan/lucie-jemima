@@ -3,13 +3,15 @@
 
     <div class="row">
       {% for work in worklist | reverse %}
+        {% if title.slice(0, -7) != work.data.title %}
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto">
             <a href="{{ work.url | url }}">
-              <img class="img-fluid" src="{{ work.data.thumbnail }}" alt="{{ work.data.title }}" title="{{ work.data.title }}"/>
+              <img class="img-fluid" src="{{ work.data.headerimage }}" alt="{{ work.data.title }}" title="{{ work.data.title }}"/>
             </a>
           </div>
         </div>
+        {% endif %}
       {% endfor %}
     </div>
 
