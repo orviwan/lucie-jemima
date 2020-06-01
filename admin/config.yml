@@ -44,3 +44,4 @@ collections:
       - { label: "Homepage Image", name: "thumbnail", widget: "image" }
       - { label: "Header Image", name: "headerimage", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Sort", name: "sort", widget: "number" }
