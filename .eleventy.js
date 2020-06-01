@@ -2,7 +2,7 @@ const { DateTime } = require("luxon");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 
-module.exports = function(eleventyConfig) {
+module.exports = (eleventyConfig) => {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("work", "layouts/work.njk");
@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify JS
-  eleventyConfig.addFilter("jsmin", function(code) {
+  eleventyConfig.addFilter("jsmin", (code) => {
     let minified = UglifyJS.minify(code);
     if (minified.error) {
       console.log("UglifyJS error: ", minified.error);
@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -41,16 +41,20 @@ module.exports = function(eleventyConfig) {
   });
 
   // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
+  eleventyConfig.addCollection("posts", (collection) => {
+    return collection.getAllSorted().filter((item) => {
       return item.inputPath.match(/^\.\/posts\//) !== null;
     });
   });
 
   // only content in the `work/` directory
-  eleventyConfig.addCollection("work", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
+  eleventyConfig.addCollection("work", (collection) => {
+    return collection.getAllSorted().filter((item) => {
       return item.inputPath.match(/^\.\/work\//) !== null;
+    }).sort((a, b) => {
+      if (a.data.sort < b.data.sort) return -1;
+      else if (a.data.sort > b.data.sort) return 1;
+      else return 0;
     });
   });
 
