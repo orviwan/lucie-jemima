@@ -2,7 +2,7 @@
 title: Ladyfingers Heads
 subtitle: Ladyfingers Heads
 year: 2020
-thumbnail: /static/img/lf-heads.jpg
+thumbnail: /static/img/ladyfingers-heads.jpg
 headerimage: /static/img/ladyfingers-heads.jpg
 sort: 6
 ---
