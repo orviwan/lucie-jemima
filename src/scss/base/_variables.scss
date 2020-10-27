@@ -3,15 +3,17 @@
 // Set custom colors
 $teal: #f792dc !default;
 $dark-blue: #020202 !default;
+$dark-brown: #432917 !default;
+$light-pink: #fec0c8 !default;
 
 // Override Bootstrap primary and secondary colors
-$primary: $teal !default;
-$secondary: $dark-blue !default;
+$primary: $light-pink !default;
+$secondary: $dark-brown !default;
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
 
-$headings-font-family: "Rogeu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
+$headings-font-family: "Zilla Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
 
 $headings-font-weight: 700 !default;
 
