@@ -4,6 +4,6 @@ subtitle: Family
 year: 2020
 thumbnail: /static/img/family.jpg
 headerimage: /static/img/family.jpg
-sort: 14
+sort: 1
 ---
 A family portrait as a gift for my Dad.
