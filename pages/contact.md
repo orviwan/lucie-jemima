@@ -8,4 +8,4 @@ tags:
   - nav
 section: contact
 ---
-If you have any questions or queries, please fill out the form below to send me an email and I'll get back to you as soon as possible!
+If you have any questions, queries or would like to collaborate with me then please do drop me an email by filling out the form below! I will get back to you as soon as possible. Thank you!
